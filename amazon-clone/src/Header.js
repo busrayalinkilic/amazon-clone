@@ -19,11 +19,15 @@ function Header() {
         <input className="header_searchInput" type="text"></input>
         <SearchIcon className="header_searchIcon" />
       </div>
+
       <div className="header_nav">
+      <Link to={"/login"}>
         <div className="header_option">
           <span className="header_optionLineOne"> Hello Guest</span>
           <span className="header_optionLineTwo"> Sıgn In</span>
         </div>
+        </Link>
+
         <div className="header_option">
           <span className="header_optionLineOne"> Returns </span>
           <span className="header_optionLineTwo"> & Orders</span>
@@ -33,6 +37,7 @@ function Header() {
           <span className="header_optionLineOne"> Your</span>
           <span className="header_optionLineTwo"> Prime</span>
         </div>
+
         <Link to={"/checkout"}>
           <div className="header_optionBasket">
             <ShoppingBasketIcon />
@@ -41,6 +46,7 @@ function Header() {
             </span>
           </div>{" "}
         </Link>
+        
       </div>
     </div>
   );
