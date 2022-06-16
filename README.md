@@ -1,3 +1,3 @@
 Amazon Clone Project with React
 
-Başlangıç: 02.04.22
+Başlangıç: 02.02.22
