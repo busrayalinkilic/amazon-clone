@@ -1,3 +1,3 @@
-React ile Amazon Clone Uygulaması
+Amazon Clone Project with React
 
-Başlangıç: 02.02.22
+Başlangıç: 02.04.22
