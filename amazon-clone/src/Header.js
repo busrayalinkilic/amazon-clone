@@ -32,7 +32,7 @@ function Header() {
         </div>
         <div className="header__deliveryText">
           <div className="header__deliveryTextName">
-            <h6>Alıcı: {!user ? "Guest" : user.email} </h6>
+            <h6>Alıcı: {!user ? "Misafir" : user.email} </h6>
           </div>
 
           <div className="header__deliveryTextLocation">
@@ -50,7 +50,7 @@ function Header() {
         <Link to={!user && "/login"}>
           <div onClick={handleAuthentication} className="header__option">
             <span className="header__optionLineOne">
-              Merhaba {!user ? "Guest" : user.email}
+              Merhaba {!user ? "Misafir" : user.email}
             </span>
             <span className="header__optionLineTwo">
               {user ? "Çıkış Yap" : "Giriş Yap"}
