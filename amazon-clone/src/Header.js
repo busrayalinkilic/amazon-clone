@@ -59,11 +59,14 @@ function Header() {
         </Link>
         <Link to="/orders">
           <div className="header__option">
-            <span className="header__optionLineOne">İadeper</span>
+            <span className="header__optionLineOne">İadeler</span>
             <span className="header__optionLineTwo">ve Siparişler</span>
           </div>
         </Link>
-
+        <div className="header__option">
+          <span className="header__optionLineOne">Alışveriş</span>
+          <span className="header__optionLineTwo">Sepeti</span>
+        </div>
         <Link to="/checkout">
           <div className="header__optionBasket">
             <ShoppingBasketIcon />
@@ -72,10 +75,6 @@ function Header() {
             </span>
           </div>
         </Link>
-        <div className="header__option">
-          <span className="header__optionLineOne">Alışveriş</span>
-          <span className="header__optionLineTwo">Sepeti</span>
-        </div>
       </div>
     </div>
   );
