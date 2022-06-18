@@ -8,10 +8,10 @@ function Home() {
       <div className="home__container">
         <img
           className="home__image"
-          src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
+          src="https://r.resimlink.com/7h8WcfoQl.jpg"
           alt=""
         />
-
+        
         <div className="home__row">
           <Product
             id="12321341"
@@ -62,6 +62,7 @@ function Home() {
             image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
           />
         </div>
+        
       </div>
     </div>
   );
