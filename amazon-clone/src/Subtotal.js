@@ -13,10 +13,10 @@ function Subtotal() {
         renderText={(value) => (
           <>
             <p>
-              Subtotal ({basket.length} items): <strong>{value}</strong>
+              Toplam ({basket.length} ürün): <strong>{value}</strong>
             </p>
             <small className="subtotal__gift">
-              <input type="checkbox" /> This order contains a gift
+              <input type="checkbox" /> Hediye paketi yap
             </small>
           </>
         )}
@@ -24,9 +24,9 @@ function Subtotal() {
         value={getBasketTotal(basket)}
         displayType={"text"}
         thousandSeparator={true}
-        prefix={"$"}
+        prefix={"₺"}
       />
-      <button>Proceed to Checkout</button>
+      <button>Ödeme Adımına Geç</button>
     </div>
   );
 }

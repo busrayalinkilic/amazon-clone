@@ -41,7 +41,7 @@ function Login() {
         />
       </Link>
       <div className="login__container">
-        <h1>Sign-in</h1>
+        <h1>Giriş Yap</h1>
 
         <form>
           <h5>E-mail</h5>
@@ -51,7 +51,7 @@ function Login() {
             onChange={(e) => setEmail(e.target.value)}
           />
 
-          <h5>Password</h5>
+          <h5>Şifre</h5>
           <input
             type="password"
             value={password}
@@ -63,18 +63,18 @@ function Login() {
             onClick={signIn}
             className="login__signInButton"
           >
-            Sign In
+            Giriş Yap
           </button>
         </form>
 
         <p>
-          By signing-in you agree to the AMAZON CLONE BY&AAT. Please see our
-          Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
+          Oturum açarak, Amazon'un Kullanım ve Satış Koşulları'nı kabul etmiş
+          olursunuz. Kişisel verilerinizin Amazon tarafından nasıl işlendiğine
+          ilişkin detaylı bilgi için Gizlilik Bildirimi, Çerez Bildirimi ve İlgi
+          Alanına Dayalı Tanıtımları inceleyebilirsiniz.
         </p>
 
-        <button onClick={register} className="login__registerButton">
-          Create your Amazon Account
-        </button>
+        <button onClick={register} className="login__registerButton">Amazon hesabınızı oluşturun</button>
       </div>
     </div>
   );
