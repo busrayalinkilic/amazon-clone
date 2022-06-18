@@ -1,3 +1,5 @@
-Amazon Clone Project with React
-https://challenge-72b87.web.app
+Amazon Clone Project with React <br>
+
+https://challenge-72b87.web.app <br>
+
 Başlangıç: 02.02.22
