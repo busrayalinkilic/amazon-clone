@@ -1,0 +1,68 @@
+[debug] [2022-06-19T10:55:40.464Z] ----------------------------------------------------------------------
+[debug] [2022-06-19T10:55:40.466Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\10305\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-06-19T10:55:40.466Z] CLI Version:   10.2.2
+[debug] [2022-06-19T10:55:40.466Z] Platform:      win32
+[debug] [2022-06-19T10:55:40.466Z] Node Version:  v16.14.0
+[debug] [2022-06-19T10:55:40.467Z] Time:          Sun Jun 19 2022 13:55:40 GMT+0300 (GMT+03:00)
+[debug] [2022-06-19T10:55:40.468Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-19T10:55:40.531Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-19T10:55:40.531Z] > authorizing via signed-in user (busra392886@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project challenge-72b87. This may result in unexpected behavior. 
+[debug] [2022-06-19T10:55:40.575Z] [hub] writing locator at C:\Users\10305\AppData\Local\Temp\hub-challenge-72b87.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-06-19T10:55:40.931Z] defaultcredentials: writing to file C:\Users\10305\AppData\Roaming\firebase\busra392886_gmail_com_application_default_credentials.json
+[debug] [2022-06-19T10:55:40.934Z] Setting GAC to C:\Users\10305\AppData\Roaming\firebase\busra392886_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\10305\\AppData\\Roaming\\firebase\\busra392886_gmail_com_application_default_credentials.json"}}
+[debug] [2022-06-19T10:55:40.941Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-72b87/adminSdkConfig [none]
+[debug] [2022-06-19T10:55:41.437Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-72b87/adminSdkConfig 200
+[debug] [2022-06-19T10:55:41.437Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-72b87/adminSdkConfig {"projectId":"challenge-72b87","storageBucket":"challenge-72b87.appspot.com"}
+[debug] [2022-06-19T10:55:41.452Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/challenge-72b87/sites 
+[debug] [2022-06-19T10:55:42.775Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/challenge-72b87/sites 200
+[debug] [2022-06-19T10:55:42.775Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/challenge-72b87/sites {"sites":[{"name":"projects/challenge-72b87/sites/challenge-72b87","defaultUrl":"https://challenge-72b87.web.app","appId":"1:237618186488:web:d3c36647225d541dd9530d","type":"DEFAULT_SITE"}]}
+[debug] [2022-06-19T10:55:42.776Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-72b87/webApps/1:237618186488:web:d3c36647225d541dd9530d/config [none]
+[debug] [2022-06-19T10:55:43.767Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-72b87/webApps/1:237618186488:web:d3c36647225d541dd9530d/config 200
+[debug] [2022-06-19T10:55:43.767Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-72b87/webApps/1:237618186488:web:d3c36647225d541dd9530d/config {"projectId":"challenge-72b87","appId":"1:237618186488:web:d3c36647225d541dd9530d","storageBucket":"challenge-72b87.appspot.com","apiKey":"AIzaSyCUYDEgmpHs-kES9jVGeMlTqflbX9mvus0","authDomain":"challenge-72b87.firebaseapp.com","messagingSenderId":"237618186488","measurementId":"G-H0VLK4GBQS"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2022-06-19T10:55:43.834Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-06-19T10:55:43.834Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-06-19T10:55:43.834Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\10305\\.cache\\firebase\\emulators\\ui-v1.6.5\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\10305\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.6.5\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-06-19T10:55:43.985Z] Web / API server started at localhost:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4001\n"}}
+[info] i  functions: Watching "C:\amazone-clone\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\amazone-clone\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2022-06-19T10:55:44.122Z] Validating nodejs source
+[debug] [2022-06-19T10:55:47.256Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-19T10:55:47.257Z] Building nodejs source
+[debug] [2022-06-19T10:55:47.257Z] Analyzing nodejs backend spec

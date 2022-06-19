@@ -16,7 +16,7 @@ function Subtotal() {
           <>
             <p>
               {/* Part of the homework */}
-              Subtotal ({basket.length} items): <strong>{value}</strong>
+              Toplam ({basket.length} items): <strong>{value}</strong>
             </p>
             <small className="subtotal__gift">
               <input type="checkbox" /> Hediye paketi yap
@@ -30,7 +30,7 @@ function Subtotal() {
         prefix={"₺"}
       />
 
-      <button onClick={e => history.push('/payment')}>Ödeme Sayfasına Geçin</button>
+      <button onClick={e => history.push('/payment')}>Alışverişi Tamamla</button>
     </div>
   );
 }
