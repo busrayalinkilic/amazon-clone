@@ -33,7 +33,7 @@ function Payment() {
     getClientSecret();
   }, [basket]);
 
-  console.log('kgkg', clientSecret)
+  console.log("kgkg", clientSecret);
   const handleSubmit = async (e) => {
     e.preventDefault();
     setProcessing(true);
@@ -45,18 +45,23 @@ function Payment() {
         },
       })
       .then(({ paymentIntent }) => {
-        
-
+        db.collection("users")
+          .doc(user?.uid)
+          .collection("orders")
+          .doc(paymentIntent.id)
+          .set({
+            basket: basket,
+            amount: paymentIntent.amount,
+            created: paymentIntent.created,
+          });
 
         setSucceeded(true);
         setError(null);
         setProcessing(false);
 
         dispatch({
-          type: "EMPTY_BASKET"
-        })
-
-       
+          type: "EMPTY_BASKET",
+        });
 
         history.replace("/orders");
       });
@@ -121,7 +126,7 @@ function Payment() {
                   prefix={"₺"}
                 />
                 <button disabled={processing || disabled || succeeded}>
-                  <span>{processing ? <p>Processing</p> : "Şimdi Al"}</span>
+                  <span>{processing ? <p>İşleniyor</p> : "Şimdi Al"}</span>
                 </button>
               </div>
               {error && <div>{error}</div>}
