@@ -46,9 +46,9 @@ function App() {
           </Route>
 
           <Route path="/payment">
-            <Header />
+           
             <Payment />
-            <h1>ödeme</h1>
+           
           </Route>
 
           <Route path="/">
